@@ -1,0 +1,210 @@
+@media screen and (max-width: 600px) {
+
+    body {
+        margin: auto;
+        font-family: 'roboto', arial;
+    }
+/* HEADER */
+
+    #logo {
+       width: 50%;
+       display: block;
+       margin-top: 20px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 10px;
+    }
+
+    .localisation {
+       display: flex;
+       background-color: rgb(235, 235, 235);
+       justify-content: center;
+    }
+    .localisation i {
+        margin-top: 15px;
+      
+    }
+    .local {
+        padding-left: 20px;
+        font-weight: bold;
+    }
+
+/* PRESENTATION */
+
+    .presentation {
+        background-color: rgb(241, 241, 241);
+        margin-top: -20px;
+        height: 300px;
+    }
+    h1 {
+        width: 70%;
+        font-size: 25px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        font-family: 'roboto', arial;
+        font-weight: bold;
+    }
+    .presentation p {
+        text-align: center;
+        font-size: 18px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button {
+        background-color: #FF79DA;
+        border-radius: 80px;
+        height: 50px;
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+/* FONCTIONNEMENT */
+
+    li {
+        list-style-type: none;
+        display: flex;
+        margin-left: 10px;
+    }
+    .menu {
+       display: flex;
+       border-radius: 40px;
+       box-shadow: black;
+       width: 80%;
+       margin-left: 50px;
+       margin-top: 20px;
+       background-color:rgb(241, 241, 241);
+    }
+    .number {
+        border-radius: 100%;
+        width: 30px;
+        height: 25px;
+        text-align: center;
+        margin-left: -10px;
+        background-color: #9356DC;
+        color: white;
+        padding-top: 5px;
+    }
+    .titre {
+        margin-left: 30px;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+   .fonction i {
+       margin-left: 20px;
+       margin-top: 20px;
+       font-size: 18px;
+   }
+    .fa.fa-mobile:hover, .fa.fa-list:hover {
+        color: #9356DC;
+    }
+    .menu:hover {
+        background-color: rgb(239, 216, 253);
+    }
+
+/* RESTAURANTS*/
+
+    .resto {
+        background-color: rgb(241, 241, 241);
+        margin-top: 60px;
+        height: 1050px;
+    }
+    h2, h3 {
+        margin-left: 10px;
+        font-size: 25px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    figure {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        width: 90%;
+        background-color: white;
+    }
+    figure img {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        object-fit: cover;
+        height: 150px;
+    }
+    .contenant {
+        position: relative;
+    }
+    .text {
+        text-align: center;
+        padding-top: 5px;
+        position: absolute;
+        width: 20%;
+        height: 15%;
+        top: 10%;
+        left: 75%;
+        background-color: #99E2D0;
+        color: green;
+        font-weight: bold;
+    }
+    .nom-restaurant {
+        margin-top: 5px;
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    .lieu {
+        margin-left: 10px;
+        margin-top: -15px;
+        padding-bottom: 10px;
+    }
+    figure i {
+        float: right;
+        margin-top: -60px;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    .fa.fa-heart-o:hover {
+        color: red;
+    }
+
+/* FOOTER */
+
+    footer {
+        color: white;
+        background-color: black;
+        margin-top: -20px;
+        height: 210px;
+    }
+    h4 {
+        margin-left: 40px;
+        padding-top: 10px;
+        font-size: 20px;
+        font-family: 'shrikhand', arial;
+    }
+    .fa.fa-cutlery {
+        margin-top: 15px;
+    }
+    .fa.fa-handshake-o {
+        margin-top: -15px;
+    }
+    .partenaire {
+        margin-top: -15px;
+    }
+    footer p {
+        margin-left: 10px;
+    }
+    .mention {
+        margin-top: -5px;
+    }
+    footer ul li {
+        list-style-type: none;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
