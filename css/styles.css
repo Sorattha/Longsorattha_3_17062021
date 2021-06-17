@@ -25,6 +25,10 @@
         margin-top: 15px;
       
     }
+    #search {
+        outline-style: none;
+        
+    }
     .local {
         padding-left: 20px;
         font-weight: bold;
@@ -104,7 +108,7 @@
        margin-top: 20px;
        font-size: 18px;
    }
-    .fa.fa-mobile:hover, .fa.fa-list:hover {
+    .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
         color: #9356DC;
     }
     .menu:hover {
@@ -170,9 +174,16 @@
         margin-right: 20px;
         font-size: 25px;
     }
-    .fa.fa-heart-o:hover {
-        color: red;
+
+    .fa.fa-heart {
+        display: none;
     }
+
+    .fa.fa-heart-o:hover {
+        display: none;
+
+    }
+
 
 /* FOOTER */
 
