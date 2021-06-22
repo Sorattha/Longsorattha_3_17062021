@@ -22,13 +22,19 @@
        justify-content: center;
     }
     .localisation i {
-        margin-top: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-left: 40px;
       
     }
     #search {
-        outline-style: none;
-        
+        border: hidden;
+        border: 0;
+        background-color: rgb(235, 235, 235);   
     }
+
     .local {
         padding-left: 20px;
         font-weight: bold;
@@ -58,17 +64,21 @@
         margin-left: auto;
         margin-right: auto;
     }
-    button {
-        background-color: #FF79DA;
+    .bouton {
         border-radius: 80px;
-        height: 50px;
+        width: 45%;
+        height: 40px;
+        text-align: center;
         display: block;
-        margin-top: 30px;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
         color: white;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+        background: linear-gradient(#ff79da, #9356dc);
     }
 
 /* FONCTIONNEMENT */
@@ -119,8 +129,9 @@
 
     .resto {
         background-color: rgb(241, 241, 241);
-        margin-top: 60px;
-        height: 1050px;
+        top: 20px;
+        padding-bottom: 20px;
+        position: relative;
     }
     h2, h3 {
         margin-left: 10px;
@@ -137,6 +148,7 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 20px;
+        box-shadow: 0px 0px 2px 2px;
         width: 90%;
         background-color: white;
     }
@@ -194,7 +206,7 @@
     footer {
         color: white;
         background-color: black;
-        margin-top: -20px;
+        margin-top: 0px;
         height: 210px;
     }
     h4 {
