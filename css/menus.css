@@ -1,112 +1,316 @@
 body {
-    max-width: 1580px;
-    margin-left: 0;
-    margin-right: 0;
-    font-family: 'roboto', arial;
+  max-width: 1580px;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: 'roboto', arial;
 }
+
 header {
-    display: flex;
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
- #logo {
-     width: 20%;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
- }
-
- .fa.fa-arrow-left {
-    margin-top: 15px;
-    margin-left: 20px;
-    font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
- .photo {
-    position: relative;
-    height: 350px;
+#logo {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa.fa-arrow-left {
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.photo {
+  position: relative;
+  height: 350px;
 }
 
 #resto {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main {
-    position: relative;
-    border-radius: 20px 20px 0px 0px;
-    top: -40px;
-    background-color: rgb(241, 241, 241);
-    width: 100%;
-    padding-bottom: 10px;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  top: -40px;
+  background-color: #f1f1f1;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 .menu {
-    display: flex;
-    padding-top: 20px;
-    }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
 
 h1 {
-    font-family: 'shrikhand', arial;
-    margin-left: 20px;
-    font-size: 25px;
+  font-family: 'shrikhand', arial;
+  margin-left: 20px;
+  font-size: 25px;
 }
 
 .fa.fa-heart-o {
-    margin-left: 50px;
-    margin-top: 20px;
-    font-size: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 #resto {
-    width: 100%;
-    object-fit: cover;
-    height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
 }
 
 h2 {
-   font-size: 20px; 
-   margin-top: 40px;
-   margin-left: 20px;
-   border-bottom: 2px solid turquoise;
-   width: 3%;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  border-bottom: 2px solid turquoise;
+  width: 3%;
 }
 
 .entree_1, .plats_1, .dessert_1 {
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 70%;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+h3, .descrip {
+  margin-left: 10px;
+}
+
+h3 {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.descrip {
+  margin-top: -15px;
+}
+
+.prix {
+  float: right;
+  margin-right: 20px;
+  margin-top: -35px;
+}
+
+.bouton {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  width: 20%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
+          box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
+}
+
+.bouton:hover {
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
+          box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
+}
+
+h4 {
+  color: white;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  position: absolute;
+  margin-top: -40px;
+  margin-bottom: 0;
+  height: 250px;
+  width: 100%;
+}
+
+h4 {
+  margin-left: 40px;
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: 'shrikhand', arial;
+}
+
+.fa.fa-cutlery {
+  margin-top: 15px;
+}
+
+.propose {
+  margin-left: 25px;
+  margin-top: -20px;
+}
+
+.fa.fa-handshake-o {
+  margin-top: -15px;
+}
+
+.partenaire {
+  margin-top: -20px;
+  margin-left: 25px;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  position: absolute;
+  margin-top: -40px;
+  margin-bottom: 0;
+  height: 250px;
+  width: 100%;
+}
+
+h4 {
+  margin-left: 40px;
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: 'shrikhand', arial;
+}
+
+.fa.fa-cutlery {
+  margin-top: 15px;
+}
+
+.propose {
+  margin-left: 25px;
+  margin-top: -20px;
+}
+
+.fa.fa-handshake-o {
+  margin-top: -15px;
+}
+
+.partenaire {
+  margin-top: -20px;
+  margin-left: 25px;
+}
+
+footer p {
+  margin-left: 10px;
+}
+
+.mention {
+  margin-top: -5px;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: auto;
+    font-family: 'roboto', arial;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #logo {
+    width: 40%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .fa.fa-arrow-left {
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .photo {
+    position: relative;
+  }
+  main {
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -70px;
+    background-color: #f1f1f1;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  h1 {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .fa.fa-heart-o {
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  #resto {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+    border-bottom: 2px solid turquoise;
+    width: 10%;
+  }
+  .entree_1, .plats_1, .dessert_1 {
     border-radius: 20px;
     margin-top: 10px;
-    width: 70%;
+    width: 90%;
     height: 70px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-}
-
-h3, .descrip {
+  }
+  h3, .descrip {
     margin-left: 10px;
-}
-
-h3 {
+  }
+  h3 {
     padding-top: 10px;
     font-weight: bold;
-}
-
-.descrip {
+  }
+  .descrip {
     margin-top: -15px;
-}
-
-.prix {
+  }
+  .prix {
     float: right;
     margin-right: 20px;
     margin-top: -35px;
-}
-
-.bouton {
+  }
+  .bouton {
     margin-top: 40px;
     padding-top: 10px;
     border-radius: 20px;
     margin-bottom: 50px;
-    width: 20%;
+    width: 30%;
     height: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -114,13 +318,11 @@ h3 {
     color: white;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
     background: linear-gradient(#ff79da, #9356dc);
-}
-
-h4 {
+  }
+  h4 {
     color: white;
-}
-
-footer {
+  }
+  footer {
     color: white;
     background-color: black;
     position: absolute;
@@ -128,225 +330,37 @@ footer {
     margin-bottom: 0;
     height: 250px;
     width: 100%;
-}
-h4 {
+  }
+  h4 {
     margin-left: 40px;
     padding-top: 10px;
     font-size: 20px;
     font-family: 'shrikhand', arial;
-}
-.fa.fa-cutlery {
+  }
+  .fa.fa-cutlery {
     margin-top: 15px;
-}
-.propose {
+  }
+  .propose {
     margin-left: 25px;
     margin-top: -20px;
-}
-.fa.fa-handshake-o {
+  }
+  .fa.fa-handshake-o {
     margin-top: -15px;
-}
-.partenaire {
+  }
+  .partenaire {
     margin-top: -20px;
     margin-left: 25px;
-}
-footer {
-    color: white;
-    background-color: black;
-    position: absolute;
-    margin-top: -40px;
-    margin-bottom: 0;
-    height: 250px;
-    width: 100%;
-}
-h4 {
-    margin-left: 40px;
-    padding-top: 10px;
-    font-size: 20px;
-    font-family: 'shrikhand', arial;
-}
-.fa.fa-cutlery {
-    margin-top: 15px;
-}
-.propose {
-    margin-left: 25px;
-    margin-top: -20px;
-}
-.fa.fa-handshake-o {
-    margin-top: -15px;
-}
-.partenaire {
-    margin-top: -20px;
-    margin-left: 25px;
-}
-footer p {
+  }
+  footer p {
     margin-left: 10px;
-}
-.mention {
+  }
+  .mention {
     margin-top: -5px;
-}
-footer ul li {
+  }
+  footer ul li {
     list-style-type: none;
     margin-top: 10px;
     margin-left: 0px;
+  }
 }
-
-@media screen and (max-width: 600px) {
-
-    body {
-        margin: auto;
-        font-family: 'roboto', arial;
-    }
-
-    header {
-        display: flex;
-    }
-
-    #logo {
-        width: 40%;
-        height: 20%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .fa.fa-arrow-left {
-        margin-top: 25px;
-        margin-left: 20px;
-        font-size: 20px;
-    }
-
-    .photo {
-        position: relative;
-    }
-
-    main {
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
-        margin-top: -70px;
-        background-color: rgb(241, 241, 241);
-        width: 100%;
-        padding-bottom: 10px;
-    }
-
-    .menu {
-        display: flex;
-    }
-
-    h1 {
-        font-weight: bold;
-        margin-left: 10px;
-        font-size: 25px;
-    }
-
-    .fa.fa-heart-o {
-        margin-left: 100px;
-        margin-top: 20px;
-        font-size: 20px;
-    }
-    
-    #resto {
-        width: 100%;
-        object-fit: cover;
-        height: 300px;
-    }
-
-    h2 {
-       font-size: 20px; 
-       margin-top: 40px;
-       margin-left: 10px;
-       border-bottom: 2px solid turquoise;
-       width: 10%;
-    }
-
-    .entree_1, .plats_1, .dessert_1 {
-        border-radius: 20px;
-        margin-top: 10px;
-        width: 90%;
-        height: 70px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-    }
-
-    h3, .descrip {
-        margin-left: 10px;
-    }
-
-    h3 {
-        padding-top: 10px;
-        font-weight: bold;
-    }
-    
-    .descrip {
-        margin-top: -15px;
-    }
-
-    .prix {
-        float: right;
-        margin-right: 20px;
-        margin-top: -35px;
-    }
-
-    .bouton {
-        margin-top: 40px;
-        padding-top: 10px;
-        border-radius: 20px;
-        margin-bottom: 50px;
-        width: 30%;
-        height: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        color: white;
-        background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-        background: linear-gradient(#ff79da, #9356dc);
-    }
-
-    h4 {
-        color: white;
-    }
-
-    footer {
-        color: white;
-        background-color: black;
-        position: absolute;
-        margin-top: -40px;
-        margin-bottom: 0;
-        height: 250px;
-        width: 100%;
-    }
-    h4 {
-        margin-left: 40px;
-        padding-top: 10px;
-        font-size: 20px;
-        font-family: 'shrikhand', arial;
-    }
-    .fa.fa-cutlery {
-        margin-top: 15px;
-    }
-    .propose {
-        margin-left: 25px;
-        margin-top: -20px;
-    }
-    .fa.fa-handshake-o {
-        margin-top: -15px;
-    }
-    .partenaire {
-        margin-top: -20px;
-        margin-left: 25px;
-    }
-    footer p {
-        margin-left: 10px;
-    }
-    .mention {
-        margin-top: -5px;
-    }
-    footer ul li {
-        list-style-type: none;
-        margin-top: 10px;
-        margin-left: 0px;
-    }
-
-
-}
+/*# sourceMappingURL=menus.css.map */
