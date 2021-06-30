@@ -1,0 +1,8 @@
+.bouton {
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+}
