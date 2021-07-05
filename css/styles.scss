@@ -200,20 +200,10 @@ a {
     color: black;
 }
 
-.fa.fa-heart {
-   color: white;
-   background-color: black;
-   border-radius: 50%;
-   font-weight: bold;
-  
-   }
-.fa.fa-heart:hover {
-    color: yellow;
-    overflow: hidden;
-      opacity: 1;
-      transition: .5s 0s ease;
-      z-index: 999;
+.fa.fa-heart-o:hover {
+    display: block;
 }
+
 
 
 
