@@ -35,6 +35,7 @@ header {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 500px;
 }
 
 main {
@@ -65,13 +66,6 @@ h1 {
   font-size: 20px;
 }
 
-#resto {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 500px;
-}
-
 h2 {
   font-size: 20px;
   margin-top: 40px;
@@ -83,7 +77,7 @@ h2 {
 .entree_1, .plats_1, .dessert_1 {
   border-radius: 20px;
   margin-top: 10px;
-  width: 70%;
+  width: 80%;
   height: 70px;
   margin-left: auto;
   margin-right: auto;
@@ -92,15 +86,90 @@ h2 {
 }
 
 .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+}
+
+.entree_1:hover .select {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transform: translateX(-2em);
+          transform: translateX(-2em);
+  background-color: #99E2D0;
+  border: 3px solid #99E2D0;
+  border-radius: 0px 20px 20px 0px;
+  width: 10%;
+  height: 90%;
+  top: -71px;
   float: right;
-  left: 100px;
-  margin-top: -40px;
-  color: #99E2D0;
+  left: 30px;
+}
+
+.plats_1:hover .select {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transform: translateX(-2em);
+          transform: translateX(-2em);
+  background-color: #99E2D0;
+  border: 3px solid #99E2D0;
+  border-radius: 0px 20px 20px 0px;
+  width: 10%;
+  height: 90%;
+  top: -71px;
+  float: right;
+  left: 30px;
+}
+
+.dessert_1:hover .select {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transform: translateX(-2em);
+          transform: translateX(-2em);
+  background-color: #99E2D0;
+  border: 3px solid #99E2D0;
+  border-radius: 0px 20px 20px 0px;
+  width: 10%;
+  height: 90%;
+  top: -71px;
+  float: right;
+  left: 30px;
 }
 
 .fa.fa-check-circle {
-  font-size: 20px;
+  display: none;
+}
+
+.entree_1:hover .fa.fa-check-circle {
+  color: white;
+  margin: 0;
+  display: block;
+}
+
+.plats_1:hover .fa.fa-check-circle {
+  color: white;
+  margin: 0;
+  display: block;
+}
+
+.dessert_1:hover .fa.fa-check-circle {
+  color: white;
+  margin: 0;
+  display: block;
 }
 
 .entrees {
@@ -169,8 +238,8 @@ h3 {
 
 .prix {
   float: right;
-  margin-right: 100px;
-  margin-top: -35px;
+  margin-right: 150px;
+  margin-top: -50px;
   font-weight: bold;
   font-size: 17px;
 }
@@ -356,20 +425,42 @@ footer ul li {
     margin-right: auto;
     background-color: white;
   }
+  .select {
+    margin-right: 20px;
+    height: 100%;
+  }
+  .entree_1:hover .select {
+    left: 60px;
+  }
+  .plats_1:hover .select {
+    left: 60px;
+  }
+  .dessert_1:hover .select {
+    left: 60px;
+  }
+  .fa.fa-check-circle {
+    margin-left: 3px;
+  }
   h3, .descrip {
     margin-left: 10px;
   }
   h3 {
     padding-top: 10px;
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .descrip {
     margin-top: -15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .prix {
     float: right;
-    margin-right: 20px;
-    margin-top: -35px;
+    margin-right: 40px;
+    margin-top: -55px;
   }
   .bouton {
     margin-top: 40px;
