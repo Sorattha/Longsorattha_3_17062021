@@ -81,9 +81,12 @@ h2 {
 .select {
     display: flex;
     position: relative;
-    justify-content: center;
     align-items: center;
     top: 0;
+    float: right;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
 }
 .entree_1:hover .select {
     transition: transform 1s ease-in-out;
@@ -92,10 +95,9 @@ h2 {
     border: 3px solid #99E2D0;
     border-radius: 0px 20px 20px 0px;
     width: 10%;
-    height: 90%;
-    top: -71px;
-    float: right;
-    left: 30px;
+    height: 92%;
+    top: -62px;
+   
 }
 
 .plats_1:hover .select {
@@ -105,8 +107,8 @@ h2 {
     border: 3px solid #99E2D0;
     border-radius: 0px 20px 20px 0px;
     width: 10%;
-    height: 90%;
-    top: -71px;
+    height: 92%;
+    top: -62px;
     float: right;
     left: 30px;
 }
@@ -118,8 +120,8 @@ h2 {
     border: 3px solid #99E2D0;
     border-radius: 0px 20px 20px 0px;
     width: 10%;
-    height: 90%;
-    top: -71px;
+    height: 92%;
+    top: -62px;
     float: right;
     left: 30px;
 }
@@ -188,16 +190,22 @@ h3 {
     font-weight: bold;
 }
 
+.texte {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
 .descrip {
-    margin-top: -15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .prix {
-    float: right;
-    margin-right: 150px;
-    margin-top: -50px;
     font-weight: bold;
     font-size: 17px;
+    margin-right: 20px;
 }
 
 .bouton {
@@ -382,9 +390,11 @@ footer ul li {
     }
     .plats_1:hover .select {
         left: 60px;
+        margin-top: 10px;
     }
     .dessert_1:hover .select {
         left: 60px;
+        margin-top: 10px;
     }
 
     .fa.fa-check-circle {
@@ -403,17 +413,18 @@ footer ul li {
     }
     
     .descrip {
-        margin-top: -15px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
 
-    .prix {
-        float: right;
-        margin-right: 40px;
-        margin-top: -55px;
+    .texte {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -10px;
     }
+    
+   
 
     .bouton {
         margin-top: 40px;
