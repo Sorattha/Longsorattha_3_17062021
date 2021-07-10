@@ -74,6 +74,11 @@ h2 {
   width: 3%;
 }
 
+.select i {
+  color: transparent;
+  font-size: 20px;
+}
+
 .entree_1, .plats_1, .dessert_1 {
   border-radius: 20px;
   margin-top: 10px;
@@ -101,74 +106,221 @@ h2 {
 }
 
 .entree_1:hover .select {
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-  -webkit-transform: translateX(-2em);
-          transform: translateX(-2em);
   background-color: #99E2D0;
   border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
-  height: 92%;
-  top: -62px;
+  height: 65px;
+  top: -60px;
+  float: right;
+  overflow: hidden;
+  -webkit-animation: select ease 0.3s;
+          animation: select ease 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes select {
+  0% {
+    opacity: .5;
+    -webkit-transform: translate(150px, 0);
+            transform: translate(150px, 0);
+  }
+  20% {
+    opacity: .6;
+    -webkit-transform: translate(30px, 0);
+            transform: translate(30px, 0);
+  }
+  40% {
+    opacity: .7;
+    -webkit-transform: translate(20px, 0);
+            transform: translate(20px, 0);
+  }
+  60% {
+    opacity: .8;
+    -webkit-transform: translate(15px, 0);
+            transform: translate(15px, 0);
+  }
+  80% {
+    opacity: .9;
+    -webkit-transform: translate(7px, 0);
+            transform: translate(7px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
+  }
+}
+
+@keyframes select {
+  0% {
+    opacity: .5;
+    -webkit-transform: translate(150px, 0);
+            transform: translate(150px, 0);
+  }
+  20% {
+    opacity: .6;
+    -webkit-transform: translate(30px, 0);
+            transform: translate(30px, 0);
+  }
+  40% {
+    opacity: .7;
+    -webkit-transform: translate(20px, 0);
+            transform: translate(20px, 0);
+  }
+  60% {
+    opacity: .8;
+    -webkit-transform: translate(15px, 0);
+            transform: translate(15px, 0);
+  }
+  80% {
+    opacity: .9;
+    -webkit-transform: translate(7px, 0);
+            transform: translate(7px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
+  }
+}
+
+@-webkit-keyframes select-prix {
+  0% {
+    -webkit-transform: translate(50px, 0);
+            transform: translate(50px, 0);
+  }
+  40% {
+    -webkit-transform: translate(25px, 0);
+            transform: translate(25px, 0);
+  }
+  70% {
+    -webkit-transform: translate(12px, 0);
+            transform: translate(12px, 0);
+  }
+  100% {
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
+  }
+}
+
+@keyframes select-prix {
+  0% {
+    -webkit-transform: translate(50px, 0);
+            transform: translate(50px, 0);
+  }
+  40% {
+    -webkit-transform: translate(25px, 0);
+            transform: translate(25px, 0);
+  }
+  70% {
+    -webkit-transform: translate(12px, 0);
+            transform: translate(12px, 0);
+  }
+  100% {
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
+  }
+}
+
+.entree_1:hover .prix {
+  -webkit-animation: select-contain ease 0.3s;
+          animation: select-contain ease 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  min-width: 150px;
+}
+
+.entree_1:hover .select i {
+  right: 0;
+  color: white;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .plats_1:hover .select {
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-  -webkit-transform: translateX(-2em);
-          transform: translateX(-2em);
   background-color: #99E2D0;
   border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
-  height: 92%;
-  top: -62px;
+  height: 65px;
+  top: -60px;
   float: right;
-  left: 30px;
+  overflow: hidden;
+  -webkit-animation: select ease 0.3s;
+          animation: select ease 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.plats_1:hover .select i {
+  right: 0;
+  color: white;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.plats_1:hover .prix {
+  -webkit-animation: select-contain ease 0.3s;
+          animation: select-contain ease 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  min-width: 150px;
 }
 
 .dessert_1:hover .select {
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-  -webkit-transform: translateX(-2em);
-          transform: translateX(-2em);
   background-color: #99E2D0;
   border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
-  height: 92%;
-  top: -62px;
+  height: 65px;
+  top: -60px;
   float: right;
-  left: 30px;
+  overflow: hidden;
+  -webkit-animation: select ease 0.3s;
+          animation: select ease 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
-.fa.fa-check-circle {
-  display: none;
-}
-
-.entree_1:hover .fa.fa-check-circle {
+.dessert_1:hover .select i {
+  right: 0;
   color: white;
-  margin: 0;
-  display: block;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
-.plats_1:hover .fa.fa-check-circle {
-  color: white;
-  margin: 0;
-  display: block;
-}
-
-.dessert_1:hover .fa.fa-check-circle {
-  color: white;
-  margin: 0;
-  display: block;
+.dessert_1:hover .prix {
+  -webkit-animation: select-contain ease 0.3s;
+          animation: select-contain ease 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  min-width: 150px;
 }
 
 .entrees {
@@ -425,32 +577,14 @@ footer ul li {
     border-bottom: 2px solid turquoise;
     width: 10%;
   }
-  .entree_1, .plats_1, .dessert_1 {
-    border-radius: 20px;
-    margin-top: 10px;
-    width: 90%;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-  }
-  .select {
-    margin-right: 20px;
-    height: 100%;
-  }
   .entree_1:hover .select {
-    left: 60px;
+    width: 15%;
   }
   .plats_1:hover .select {
-    left: 60px;
-    margin-top: 10px;
+    width: 15%;
   }
   .dessert_1:hover .select {
-    left: 60px;
-    margin-top: 10px;
-  }
-  .fa.fa-check-circle {
-    margin-left: 3px;
+    width: 15%;
   }
   h3, .descrip {
     margin-left: 10px;
