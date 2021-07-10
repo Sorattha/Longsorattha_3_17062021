@@ -61,7 +61,7 @@ main {
 
 .menu i {
   margin-right: 20px;
-  font-size: 20px;
+  font-size: 30px;
   padding-top: 20px;
 }
 
@@ -77,7 +77,7 @@ main {
 }
 
 .like:hover .hover-icon {
-  color: #ff79da;
+  color: #FF79DA;
   opacity: 1;
   -webkit-transition: .5s 0s ease;
   transition: .5s 0s ease;
@@ -100,7 +100,7 @@ h2 {
   font-size: 20px;
   margin-top: 40px;
   margin-left: 20px;
-  border-bottom: 2px solid turquoise;
+  border-bottom: 2px solid #99E2D0;
   width: 3%;
 }
 
@@ -344,8 +344,8 @@ h3 {
   margin-right: auto;
   text-align: center;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
           box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
 }
@@ -492,7 +492,7 @@ footer ul li {
     font-size: 20px;
     margin-top: 40px;
     margin-left: 10px;
-    border-bottom: 2px solid turquoise;
+    border-bottom: 2px solid #99E2D0;
     width: 10%;
   }
   .entree_1:hover .select {
@@ -548,8 +548,8 @@ footer ul li {
     margin-right: auto;
     text-align: center;
     color: white;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background: linear-gradient(#ff79da, #9356dc);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
   }
   h4 {
     color: white;
