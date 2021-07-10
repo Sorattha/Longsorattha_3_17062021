@@ -225,16 +225,18 @@ figure {
    padding-top: 0;
    padding-bottom: 0px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
 figure i {
     float: right;
     margin-top: -60px;
     margin-right: 20px;
     font-size: 25px;
 }
-a {
-    text-decoration: none;
-    color: black;
-}
+
 
 .like {
     position: relative;
@@ -337,23 +339,18 @@ li a {
         flex-direction: column;
         margin-top: 20px;
     }
-    figure i {
-        margin-left: 200px;
-        margin-right: 20px;
-        font-size: 25px;
-        margin-top: 220px;
-    }
+  
     a {
         text-decoration: none;
         color: black;
     }
-    
+
     .like {
-        position: absolute;
-        margin-left: 250px;
+       position: absolute;
+       margin-top: 280px;
+       right: 180px;
       
         .hover-icon {
-          position: absolute;
           opacity: 0;
           
         }
@@ -394,6 +391,7 @@ li a {
         position: absolute;
     }
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -545,6 +543,40 @@ li a {
         color: black;
     }
 
+    .like {
+        position: absolute;
+        margin-top: 280px;
+        right: 20px;
+       
+         .hover-icon {
+           opacity: 0;
+           
+         }
+       
+         i {
+           color: gray;
+           font-size: 24px;
+           left: 50%;
+         }
+       
+         &:hover {
+           cursor: pointer;
+       
+           .default-icon {
+             opacity: 0;
+             transition: .5s 0s ease;
+           }
+       
+           .hover-icon {
+             color: $secondaire;
+             opacity: 2;
+             transition: .5s 0s ease;
+             z-index: 999;
+           }
+         }
+       }
+
+
     figure {
         margin-top: -5px;
         border-radius: 20px;
@@ -584,46 +616,9 @@ li a {
         margin-top: -15px;
         padding-bottom: 10px;
     }
-    figure i {
-        margin-left: 200px;
-        margin-right: 20px;
-        font-size: 25px;
-        margin-top: 240px;
-    }
+   
 
-    
-    .like {
-        position: absolute;
-        margin-left: 90px;
-      
-        .hover-icon {
-          position: absolute;
-          opacity: 0;
-          
-        }
-      
-        i {
-          color: gray;
-          font-size: 24px;
-          left: 50%;
-        }
-      
-        &:hover {
-          cursor: pointer;
-      
-          .default-icon {
-            opacity: 0;
-            transition: .5s 0s ease;
-          }
-      
-          .hover-icon {
-            color: $secondaire;
-            opacity: 2;
-            transition: .5s 0s ease;
-            z-index: 999;
-          }
-        }
-      }
+ 
 
 /* FOOTER */
 
