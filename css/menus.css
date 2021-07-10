@@ -24,6 +24,7 @@ header {
   margin-top: 15px;
   margin-left: 20px;
   font-size: 20px;
+  color: black;
 }
 
 .photo {
@@ -51,19 +52,48 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 20px;
+  margin-left: 0;
+}
+
+.menu i {
+  margin-right: 20px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.like:hover {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.like:hover .default-icon {
+  opacity: 0;
+  -webkit-transition: .5s 0s ease;
+  transition: .5s 0s ease;
+}
+
+.like:hover .hover-icon {
+  color: #ff79da;
+  opacity: 1;
+  -webkit-transition: .5s 0s ease;
+  transition: .5s 0s ease;
+  z-index: 999;
+}
+
+.like .hover-icon {
+  right: 0;
+  opacity: 0;
+  position: absolute;
 }
 
 h1 {
   font-family: 'shrikhand', arial;
   margin-left: 20px;
   font-size: 25px;
-}
-
-.fa.fa-heart-o {
-  margin-left: 50px;
-  margin-top: 20px;
-  font-size: 20px;
 }
 
 h2 {
@@ -81,6 +111,8 @@ h2 {
 
 .entree_1, .plats_1, .dessert_1 {
   border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px #b6b6b6;
+          box-shadow: 5px 5px 5px #b6b6b6;
   margin-top: 10px;
   width: 80%;
   height: 70px;
@@ -122,110 +154,6 @@ h2 {
           animation-iteration-count: 1;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-}
-
-@-webkit-keyframes select {
-  0% {
-    opacity: .5;
-    -webkit-transform: translate(150px, 0);
-            transform: translate(150px, 0);
-  }
-  20% {
-    opacity: .6;
-    -webkit-transform: translate(30px, 0);
-            transform: translate(30px, 0);
-  }
-  40% {
-    opacity: .7;
-    -webkit-transform: translate(20px, 0);
-            transform: translate(20px, 0);
-  }
-  60% {
-    opacity: .8;
-    -webkit-transform: translate(15px, 0);
-            transform: translate(15px, 0);
-  }
-  80% {
-    opacity: .9;
-    -webkit-transform: translate(7px, 0);
-            transform: translate(7px, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
-  }
-}
-
-@keyframes select {
-  0% {
-    opacity: .5;
-    -webkit-transform: translate(150px, 0);
-            transform: translate(150px, 0);
-  }
-  20% {
-    opacity: .6;
-    -webkit-transform: translate(30px, 0);
-            transform: translate(30px, 0);
-  }
-  40% {
-    opacity: .7;
-    -webkit-transform: translate(20px, 0);
-            transform: translate(20px, 0);
-  }
-  60% {
-    opacity: .8;
-    -webkit-transform: translate(15px, 0);
-            transform: translate(15px, 0);
-  }
-  80% {
-    opacity: .9;
-    -webkit-transform: translate(7px, 0);
-            transform: translate(7px, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
-  }
-}
-
-@-webkit-keyframes select-prix {
-  0% {
-    -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
-  }
-  40% {
-    -webkit-transform: translate(25px, 0);
-            transform: translate(25px, 0);
-  }
-  70% {
-    -webkit-transform: translate(12px, 0);
-            transform: translate(12px, 0);
-  }
-  100% {
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
-  }
-}
-
-@keyframes select-prix {
-  0% {
-    -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
-  }
-  40% {
-    -webkit-transform: translate(25px, 0);
-            transform: translate(25px, 0);
-  }
-  70% {
-    -webkit-transform: translate(12px, 0);
-            transform: translate(12px, 0);
-  }
-  100% {
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
-  }
 }
 
 .entree_1:hover .prix {
@@ -549,20 +477,10 @@ footer ul li {
     width: 100%;
     padding-bottom: 10px;
   }
-  .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   h1 {
     font-weight: bold;
     margin-left: 10px;
     font-size: 25px;
-  }
-  .fa.fa-heart-o {
-    margin-left: 100px;
-    margin-top: 20px;
-    font-size: 20px;
   }
   #resto {
     width: 100%;
@@ -586,12 +504,21 @@ footer ul li {
   .dessert_1:hover .select {
     width: 15%;
   }
+  .entree_1:hover .prix {
+    min-width: 100px;
+  }
+  .plats_1:hover .prix {
+    min-width: 100px;
+  }
+  .dessert_1:hover .prix {
+    min-width: 100px;
+  }
   h3, .descrip {
     margin-left: 10px;
   }
   h3 {
     padding-top: 10px;
-    font-weight: bold;
+    font-weight: bolder;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

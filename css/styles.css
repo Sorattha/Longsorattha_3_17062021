@@ -295,26 +295,29 @@ a {
   color: black;
 }
 
-.fa.fa-heart-o {
-  background-color: #9356DC;
-  opacity: 1;
+.like:hover {
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.fa.fa-heart-o:hover {
-  background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.head-background:hover {
-  background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  left: 0;
-  top: 0;
+.like:hover .default-icon {
   opacity: 0;
+  -webkit-transition: .5s 0s ease;
+  transition: .5s 0s ease;
+}
+
+.like:hover .hover-icon {
+  color: #ff79da;
+  opacity: 1;
+  -webkit-transition: .5s 0s ease;
+  transition: .5s 0s ease;
+  z-index: 999;
+}
+
+.like .hover-icon {
+  right: 0;
+  opacity: 0;
+  position: absolute;
 }
 
 footer {
