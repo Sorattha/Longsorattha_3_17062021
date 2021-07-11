@@ -113,7 +113,7 @@ h2 {
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 5px #b6b6b6;
           box-shadow: 5px 5px 5px #b6b6b6;
-  margin-top: 10px;
+  margin-top: 30px;
   width: 80%;
   height: 70px;
   margin-left: auto;
@@ -127,14 +127,14 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   float: right;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -webkit-box-align: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .entree_1:hover .select {
@@ -143,26 +143,10 @@ h2 {
   border-radius: 0px 20px 20px 0px;
   width: 10%;
   height: 65px;
-  top: -60px;
-  float: right;
-  overflow: hidden;
-  -webkit-animation: select ease 0.3s;
-          animation: select ease 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  top: -61px;
 }
 
 .entree_1:hover .prix {
-  -webkit-animation: select-contain ease 0.3s;
-          animation: select-contain ease 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   min-width: 150px;
 }
 
@@ -181,17 +165,8 @@ h2 {
   border-radius: 0px 20px 20px 0px;
   width: 10%;
   height: 65px;
-  top: -60px;
+  top: -61px;
   float: right;
-  overflow: hidden;
-  -webkit-animation: select ease 0.3s;
-          animation: select ease 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
 }
 
 .plats_1:hover .select i {
@@ -204,12 +179,6 @@ h2 {
 }
 
 .plats_1:hover .prix {
-  -webkit-animation: select-contain ease 0.3s;
-          animation: select-contain ease 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   min-width: 150px;
 }
 
@@ -219,17 +188,86 @@ h2 {
   border-radius: 0px 20px 20px 0px;
   width: 10%;
   height: 65px;
-  top: -60px;
+  top: -61px;
   float: right;
-  overflow: hidden;
-  -webkit-animation: select ease 0.3s;
-          animation: select ease 0.3s;
+  -webkit-animation: select ease .3s;
+          animation: select ease .3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+  overflow: hidden;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes select {
+  0% {
+    opacity: .5;
+    -webkit-transform: translate(50px, 0);
+            transform: translate(50px, 0);
+  }
+  20% {
+    opacity: .6;
+    -webkit-transform: translate(30px, 0);
+            transform: translate(30px, 0);
+  }
+  40% {
+    opacity: .7;
+    -webkit-transform: translate(20px, 0);
+            transform: translate(20px, 0);
+  }
+  60% {
+    opacity: .8;
+    -webkit-transform: translate(15px, 0);
+            transform: translate(15px, 0);
+  }
+  80% {
+    opacity: .9;
+    -webkit-transform: translate(7px, 0);
+            transform: translate(7px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
+  }
+}
+
+@keyframes select {
+  0% {
+    opacity: .5;
+    -webkit-transform: translate(50px, 0);
+            transform: translate(50px, 0);
+  }
+  20% {
+    opacity: .6;
+    -webkit-transform: translate(30px, 0);
+            transform: translate(30px, 0);
+  }
+  40% {
+    opacity: .7;
+    -webkit-transform: translate(20px, 0);
+            transform: translate(20px, 0);
+  }
+  60% {
+    opacity: .8;
+    -webkit-transform: translate(15px, 0);
+            transform: translate(15px, 0);
+  }
+  80% {
+    opacity: .9;
+    -webkit-transform: translate(7px, 0);
+            transform: translate(7px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(1px, 0);
+            transform: translate(1px, 0);
+  }
 }
 
 .dessert_1:hover .select i {
@@ -242,18 +280,13 @@ h2 {
 }
 
 .dessert_1:hover .prix {
-  -webkit-animation: select-contain ease 0.3s;
-          animation: select-contain ease 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   min-width: 150px;
 }
 
 .entrees {
+  animation: fadein 3s;
   -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+  -o-animation: fadein 3s;
 }
 
 @-webkit-keyframes fadein {
@@ -275,8 +308,9 @@ h2 {
 }
 
 .plats {
+  animation: fadein 6s;
   -webkit-animation: fadein 6s;
-          animation: fadein 6s;
+  -o-animation: fadein 6s;
 }
 
 @keyframes fadein {
@@ -289,8 +323,9 @@ h2 {
 }
 
 .desserts {
+  animation: fadein 9s;
   -webkit-animation: fadein 9s;
-          animation: fadein 9s;
+  -o-animation: fadein 9s;
 }
 
 @keyframes fadein {
@@ -309,6 +344,9 @@ h3, .descrip {
 h3 {
   padding-top: 10px;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .texte {
@@ -367,13 +405,6 @@ footer {
   margin-bottom: 0;
   height: 250px;
   width: 100%;
-}
-
-h4 {
-  margin-left: 40px;
-  padding-top: 10px;
-  font-size: 20px;
-  font-family: 'shrikhand', arial;
 }
 
 .fa.fa-cutlery {
@@ -443,6 +474,18 @@ footer ul li {
   margin-left: 0px;
 }
 
+@media screen and (max-width: 980px) {
+  .entree_1:hover .prix {
+    min-width: 110px;
+  }
+  .plats_1:hover .prix {
+    min-width: 110px;
+  }
+  .dessert_1:hover .prix {
+    min-width: 110px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   body {
     margin: auto;
@@ -505,13 +548,13 @@ footer ul li {
     width: 15%;
   }
   .entree_1:hover .prix {
-    min-width: 100px;
+    min-width: 85px;
   }
   .plats_1:hover .prix {
-    min-width: 100px;
+    min-width: 85px;
   }
   .dessert_1:hover .prix {
-    min-width: 100px;
+    min-width: 85px;
   }
   h3, .descrip {
     margin-left: 10px;

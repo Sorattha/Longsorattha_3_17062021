@@ -100,7 +100,6 @@ h2 {
    width: 3%;
 }
 
-
 .select i { 
     color: transparent;
     font-size: 20px;
@@ -109,13 +108,14 @@ h2 {
 .entree_1, .plats_1, .dessert_1 {
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(182, 182, 182);
-    margin-top: 10px;
+    margin-top: 30px;
     width: 80%;
     height: 70px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
     cursor: pointer;
+
 }
 .select {
     display: flex;
@@ -123,9 +123,7 @@ h2 {
     align-items: center;
     top: 0;
     float: right;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
 }
 
 .entree_1:hover .select {
@@ -134,20 +132,10 @@ h2 {
     border-radius: 0px 20px 20px 0px;
     width: 10%;
     height: 65px;
-   top: -60px;
-   float: right;
-    overflow: hidden;
-    animation: select ease 0.3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-  
+   top: -61px;
 }
 
 .entree_1:hover .prix {
-    animation: select-contain ease 0.3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
     min-width: 150px;
 }
 
@@ -165,14 +153,11 @@ h2 {
     border-radius: 0px 20px 20px 0px;
     width: 10%;
     height: 65px;
-    top: -60px;
+    top: -61px;
     float: right;
-    overflow: hidden;
-    animation: select ease 0.3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
 }
+
+
 
 .plats_1:hover .select i{
     right: 0;
@@ -182,27 +167,56 @@ h2 {
 }
 
 .plats_1:hover .prix {
-    animation: select-contain ease 0.3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
     min-width: 150px;
 }
 
 .dessert_1:hover .select {
-   
     background-color: $tertiaire;
     border: 3px solid $tertiaire;
     border-radius: 0px 20px 20px 0px;
     width: 10%;
     height: 65px;
-    top: -60px;
+    top: -61px;
     float: right;
-    overflow: hidden;
-    animation: select ease 0.3s;
+    animation: select ease .3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    flex: 0 0 15%;
+    overflow: hidden;
     transform-origin: 50% 50%;
-}
+    }
+
+    @keyframes select {
+        0% {
+          opacity: .5;
+          transform: translate(50px, 0);
+        }
+      
+        20% {
+          opacity: .6;
+          transform: translate(30px, 0);
+        }
+      
+        40% {
+          opacity: .7;
+          transform: translate(20px, 0);
+        }
+      
+        60% {
+          opacity: .8;
+          transform: translate(15px, 0);
+        }
+      
+        80% {
+          opacity: .9;
+          transform: translate(7px, 0);
+        }
+      
+        100% {
+          opacity: 1;
+          transform: translate(1px, 0);
+        }
+      }
 
 .dessert_1:hover .select i{
     right: 0;
@@ -212,18 +226,14 @@ h2 {
 }
 
 .dessert_1:hover .prix {
-    animation: select-contain ease 0.3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
     min-width: 150px;
 }
 
 
-
-
-
 .entrees {
     animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    -o-animation: fadein 3s;
     }
 
 @keyframes fadein {
@@ -237,7 +247,10 @@ h2 {
 
 .plats {
     animation: fadein 6s;
+    -webkit-animation: fadein 6s;
+    -o-animation: fadein 6s;
 }
+
 @keyframes fadein {
 from {
     opacity: 0;
@@ -247,9 +260,13 @@ to {
 }
 }
 
+
 .desserts {
     animation: fadein 9s;
+    -webkit-animation: fadein 9s;
+    -o-animation: fadein 9s;
 }
+
 @keyframes fadein {
 from {
     opacity: 0;
@@ -266,6 +283,9 @@ h3, .descrip {
 h3 {
     padding-top: 10px;
     font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .texte {
@@ -318,12 +338,7 @@ footer {
     height: 250px;
     width: 100%;
 }
-h4 {
-    margin-left: 40px;
-    padding-top: 10px;
-    font-size: 20px;
-    font-family: 'shrikhand', arial;
-}
+
 .fa.fa-cutlery {
     margin-top: 15px;
 }
@@ -378,6 +393,22 @@ footer ul li {
     margin-top: 10px;
     margin-left: 0px;
 }
+
+@media screen and (max-width: 980px) {
+
+    .entree_1:hover .prix {
+        min-width: 110px;
+    }
+
+    .plats_1:hover .prix {
+        min-width: 110px;
+    }
+
+    .dessert_1:hover .prix {
+        min-width: 110px;
+    }
+
+    }
 
 @media screen and (max-width: 600px) {
 
@@ -454,15 +485,15 @@ footer ul li {
     }
 
     .entree_1:hover .prix {
-        min-width: 100px;
+        min-width: 85px;
     }
 
     .plats_1:hover .prix {
-        min-width: 100px;
+        min-width: 85px;
     }
 
     .dessert_1:hover .prix {
-        min-width: 100px;
+        min-width: 85px;
     }
 
     h3, .descrip {
@@ -489,8 +520,6 @@ footer ul li {
         margin-top: -10px;
     }
     
-   
-
     .bouton {
         margin-top: 40px;
         padding-top: 10px;

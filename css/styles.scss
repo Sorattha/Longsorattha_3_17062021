@@ -127,9 +127,11 @@ li {
     display: flex;
     margin-left: 10px;
 }
+
 .fonction {
     display: flex;
 }
+
 .menu {
     display: flex;
    border-radius: 40px;
@@ -140,6 +142,7 @@ li {
    margin-top: 20px;
    background-color:rgb(241, 241, 241);
 }
+
 .number {
     border-radius: 100%;
     width: 30px;
@@ -150,26 +153,32 @@ li {
     color: white;
     padding-top: 5px;
 }
+
 .titre {
     margin-left: 30px;
     margin-top: 20px;
     font-weight: bold;
     font-size: 18px;
 }
+
 .fonction i {
    margin-left: 20px;
    margin-top: 20px;
    font-size: 18px;
 }
+
 .menu:hover, .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
     color: $primaire;
 }
+
 .menu:hover {
     background-color: rgb(239, 216, 253);
 }
+
 .titre:hover {
     color: black;
 }
+
 #resto {
     margin-top: 20px;
     display: flex;
@@ -177,6 +186,7 @@ li {
     background-color: rgb(241, 241, 241);
     padding-bottom: 20px;
 }
+
 h3 {
     font-size: 25px;
     margin-left: 10px;
@@ -198,9 +208,11 @@ figure {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
+
 .contenant {
     position: relative;
 }
+
 .text {
     text-align: center;
     padding-top: 5px;
@@ -213,6 +225,7 @@ figure {
     color: green;
     font-weight: bold;
 }
+
 .nom-restaurant {
     margin-top: 0;
     padding-top: 5px;
@@ -220,6 +233,7 @@ figure {
     margin-left: 10px;
     font-size: 18px;
 }
+
 .lieu {
     margin-left: 10px;
    padding-top: 0;
@@ -236,7 +250,6 @@ figure i {
     margin-right: 20px;
     font-size: 25px;
 }
-
 
 .like {
     position: relative;
@@ -617,9 +630,6 @@ li a {
         padding-bottom: 10px;
     }
    
-
- 
-
 /* FOOTER */
 
     footer {
