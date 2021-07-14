@@ -6,8 +6,6 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
   padding-top: 20px;
@@ -34,8 +32,7 @@ header {
 
 #resto {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 500px;
 }
 
@@ -49,12 +46,8 @@ main {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+ justify-content: space-between;
   padding-top: 20px;
   margin-left: 0;
 }
@@ -72,14 +65,12 @@ main {
 
 .like:hover .default-icon {
   opacity: 0;
-  -webkit-transition: .5s 0s ease;
   transition: .5s 0s ease;
 }
 
 .like:hover .hover-icon {
   color: #FF79DA;
   opacity: 1;
-  -webkit-transition: .5s 0s ease;
   transition: .5s 0s ease;
   z-index: 999;
 }
@@ -111,8 +102,7 @@ h2 {
 
 .entree_1, .plats_1, .dessert_1 {
   border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 5px #b6b6b6;
-          box-shadow: 5px 5px 5px #b6b6b6;
+ box-shadow: 5px 5px 5px #b6b6b6;
   margin-top: 30px;
   width: 80%;
   height: 70px;
@@ -123,27 +113,25 @@ h2 {
 }
 
 .select {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+align-items: center;
   top: 0;
   float: right;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+ justify-content: center;
+}
+
+.select:hover {
+  transition: transform 330ms ease-in-out;
 }
 
 .entree_1:hover .select {
   background-color: #99E2D0;
-  border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
-  height: 65px;
+  height: 70px;
   top: -61px;
+  transition: transform 330ms ease-in-out;
 }
 
 .entree_1:hover .prix {
@@ -153,18 +141,15 @@ h2 {
 .entree_1:hover .select i {
   right: 0;
   color: white;
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .plats_1:hover .select {
   background-color: #99E2D0;
-  border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
-  height: 65px;
+  height: 70px;
   top: -61px;
   float: right;
 }
@@ -172,10 +157,8 @@ h2 {
 .plats_1:hover .select i {
   right: 0;
   color: white;
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+ transform: rotate(360deg);
 }
 
 .plats_1:hover .prix {
@@ -184,99 +167,51 @@ h2 {
 
 .dessert_1:hover .select {
   background-color: #99E2D0;
-  border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
-  height: 65px;
+  height: 70px;
   top: -61px;
   float: right;
-  -webkit-animation: select ease .3s;
-          animation: select ease .3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 15%;
-          flex: 0 0 15%;
+   animation: select ease .3s;
+  animation-fill-mode: forwards;
+ animation-iteration-count: 1;
+  flex: 0 0 15%;
   overflow: hidden;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-}
-
-@-webkit-keyframes select {
-  0% {
-    opacity: .5;
-    -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
-  }
-  20% {
-    opacity: .6;
-    -webkit-transform: translate(30px, 0);
-            transform: translate(30px, 0);
-  }
-  40% {
-    opacity: .7;
-    -webkit-transform: translate(20px, 0);
-            transform: translate(20px, 0);
-  }
-  60% {
-    opacity: .8;
-    -webkit-transform: translate(15px, 0);
-            transform: translate(15px, 0);
-  }
-  80% {
-    opacity: .9;
-    -webkit-transform: translate(7px, 0);
-            transform: translate(7px, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
-  }
+   transform-origin: 50% 50%;
 }
 
 @keyframes select {
   0% {
     opacity: .5;
-    -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
+     transform: translate(50px, 0);
   }
   20% {
     opacity: .6;
-    -webkit-transform: translate(30px, 0);
-            transform: translate(30px, 0);
+    transform: translate(30px, 0);
   }
   40% {
     opacity: .7;
-    -webkit-transform: translate(20px, 0);
-            transform: translate(20px, 0);
+    transform: translate(20px, 0);
   }
   60% {
     opacity: .8;
-    -webkit-transform: translate(15px, 0);
-            transform: translate(15px, 0);
+    transform: translate(15px, 0);
   }
   80% {
     opacity: .9;
-    -webkit-transform: translate(7px, 0);
-            transform: translate(7px, 0);
+   transform: translate(7px, 0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(1px, 0);
-            transform: translate(1px, 0);
+    transform: translate(1px, 0);
   }
 }
 
 .dessert_1:hover .select i {
   right: 0;
   color: white;
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .dessert_1:hover .prix {
@@ -285,18 +220,8 @@ h2 {
 
 .entrees {
   animation: fadein 3s;
-  -webkit-animation: fadein 3s;
-  -o-animation: fadein 3s;
 }
 
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 @keyframes fadein {
   from {
@@ -309,8 +234,6 @@ h2 {
 
 .plats {
   animation: fadein 6s;
-  -webkit-animation: fadein 6s;
-  -o-animation: fadein 6s;
 }
 
 @keyframes fadein {
@@ -324,8 +247,6 @@ h2 {
 
 .desserts {
   animation: fadein 9s;
-  -webkit-animation: fadein 9s;
-  -o-animation: fadein 9s;
 }
 
 @keyframes fadein {
@@ -350,12 +271,9 @@ h3 {
 }
 
 .texte {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+ justify-content: space-between;
   margin-top: -10px;
 }
 
@@ -382,29 +300,13 @@ h3 {
   margin-right: auto;
   text-align: center;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
-          box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
+  box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
 }
 
 .bouton:hover {
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
-          box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
-}
-
-h4 {
-  color: white;
-}
-
-footer {
-  color: white;
-  background-color: black;
-  position: absolute;
-  margin-top: -40px;
-  margin-bottom: 0;
-  height: 250px;
-  width: 100%;
+  box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
 }
 
 .fa.fa-cutlery {
@@ -436,6 +338,7 @@ footer {
 }
 
 h4 {
+  color: white;
   margin-left: 40px;
   padding-top: 10px;
   font-size: 20px;
@@ -492,8 +395,6 @@ footer ul li {
     font-family: 'roboto', arial;
   }
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #logo {
@@ -527,7 +428,6 @@ footer ul li {
   }
   #resto {
     width: 100%;
-    -o-object-fit: cover;
        object-fit: cover;
     height: 300px;
   }
@@ -572,11 +472,7 @@ footer ul li {
     white-space: nowrap;
   }
   .texte {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: -10px;
   }
@@ -591,7 +487,7 @@ footer ul li {
     margin-right: auto;
     text-align: center;
     color: white;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
   }
   h4 {
