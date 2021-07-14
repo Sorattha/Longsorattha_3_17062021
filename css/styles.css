@@ -2,7 +2,7 @@
   border: 10px solid #9356DC;
   border-top: 10px solid #FF79DA;
   border-bottom: 10px solid #FF79DA;
-  background: linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(left top, left bottom, from(#FF79DA), to(#9356DC));
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -105,14 +105,14 @@ body {
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  background: linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
 }
 
 .bouton:hover {
   box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
-  background: linear-gradient(linear, left top, left bottom, from(#ff95e1), to(#aa76eb));
+  background: linear-gradient(left top, left bottom, from(#ff95e1), to(#aa76eb));
   background: linear-gradient(#ff95e1, #aa76eb);
 }
 
@@ -471,7 +471,7 @@ li a {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    background: linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
   }
   /* FONCTIONNEMENT */
