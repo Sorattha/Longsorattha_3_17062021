@@ -2,7 +2,6 @@
   border: 10px solid #9356DC;
   border-top: 10px solid #FF79DA;
   border-bottom: 10px solid #FF79DA;
-  background: linear-gradient(to left top, left bottom, from(#FF79DA), to(#9356DC));
   width: 100px;
   height: 100px;
   border-radius: 50%;
