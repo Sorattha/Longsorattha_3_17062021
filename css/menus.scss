@@ -73,7 +73,7 @@ main {
 }
 
 .like:hover .hover-icon {
-   color: $secondaire;
+   color: $primaire;
     opacity: 1;
     -webkit-transition: .5s 0s ease;
     transition: .5s 0s ease;
@@ -124,9 +124,7 @@ h2 {
     top: 0;
     float: right;
     justify-content: center;
-    &:hover {
-        transition: transform 330ms ease-in-out;
-    }
+    animation: select 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .entree_1:hover .select {
@@ -136,7 +134,7 @@ h2 {
     width: 10%;
     height: 65px;
    top: -61px;
-   transition: transform 330ms ease-in-out;
+   animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .entree_1:hover .prix {
@@ -182,45 +180,7 @@ h2 {
     height: 65px;
     top: -61px;
     float: right;
-    animation: select ease .3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    flex: 0 0 15%;
-    overflow: hidden;
-    transform-origin: 50% 50%;
     }
-
-    @keyframes select {
-        0% {
-          opacity: .5;
-          transform: translate(50px, 0);
-        }
-      
-        20% {
-          opacity: .6;
-          transform: translate(30px, 0);
-        }
-      
-        40% {
-          opacity: .7;
-          transform: translate(20px, 0);
-        }
-      
-        60% {
-          opacity: .8;
-          transform: translate(15px, 0);
-        }
-      
-        80% {
-          opacity: .9;
-          transform: translate(7px, 0);
-        }
-      
-        100% {
-          opacity: 1;
-          transform: translate(1px, 0);
-        }
-      }
 
 .dessert_1:hover .select i{
     right: 0;

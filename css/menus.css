@@ -6,6 +6,8 @@ body {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
   padding-top: 20px;
@@ -32,7 +34,8 @@ header {
 
 #resto {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 500px;
 }
 
@@ -46,8 +49,12 @@ main {
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
- justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 20px;
   margin-left: 0;
 }
@@ -65,12 +72,14 @@ main {
 
 .like:hover .default-icon {
   opacity: 0;
+  -webkit-transition: .5s 0s ease;
   transition: .5s 0s ease;
 }
 
 .like:hover .hover-icon {
-  color: #FF79DA;
+  color: #9356DC;
   opacity: 1;
+  -webkit-transition: .5s 0s ease;
   transition: .5s 0s ease;
   z-index: 999;
 }
@@ -102,7 +111,8 @@ h2 {
 
 .entree_1, .plats_1, .dessert_1 {
   border-radius: 20px;
- box-shadow: 5px 5px 5px #b6b6b6;
+  -webkit-box-shadow: 5px 5px 5px #b6b6b6;
+          box-shadow: 5px 5px 5px #b6b6b6;
   margin-top: 30px;
   width: 80%;
   height: 70px;
@@ -113,25 +123,31 @@ h2 {
 }
 
 .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   float: right;
- justify-content: center;
-}
-
-.select:hover {
-  transition: transform 330ms ease-in-out;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: select 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: select 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .entree_1:hover .select {
   background-color: #99E2D0;
+  border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
-  height: 70px;
+  height: 65px;
   top: -61px;
-  transition: transform 330ms ease-in-out;
+  -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .entree_1:hover .prix {
@@ -141,15 +157,18 @@ align-items: center;
 .entree_1:hover .select i {
   right: 0;
   color: white;
+  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .plats_1:hover .select {
   background-color: #99E2D0;
+  border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
-  height: 70px;
+  height: 65px;
   top: -61px;
   float: right;
 }
@@ -157,8 +176,10 @@ align-items: center;
 .plats_1:hover .select i {
   right: 0;
   color: white;
+  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
- transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .plats_1:hover .prix {
@@ -167,51 +188,21 @@ align-items: center;
 
 .dessert_1:hover .select {
   background-color: #99E2D0;
+  border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
-  height: 70px;
+  height: 65px;
   top: -61px;
   float: right;
-   animation: select ease .3s;
-  animation-fill-mode: forwards;
- animation-iteration-count: 1;
-  flex: 0 0 15%;
-  overflow: hidden;
-   transform-origin: 50% 50%;
-}
-
-@keyframes select {
-  0% {
-    opacity: .5;
-     transform: translate(50px, 0);
-  }
-  20% {
-    opacity: .6;
-    transform: translate(30px, 0);
-  }
-  40% {
-    opacity: .7;
-    transform: translate(20px, 0);
-  }
-  60% {
-    opacity: .8;
-    transform: translate(15px, 0);
-  }
-  80% {
-    opacity: .9;
-   transform: translate(7px, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(1px, 0);
-  }
 }
 
 .dessert_1:hover .select i {
   right: 0;
   color: white;
+  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .dessert_1:hover .prix {
@@ -220,8 +211,18 @@ align-items: center;
 
 .entrees {
   animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s;
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @keyframes fadein {
   from {
@@ -234,6 +235,8 @@ align-items: center;
 
 .plats {
   animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
 }
 
 @keyframes fadein {
@@ -247,6 +250,8 @@ align-items: center;
 
 .desserts {
   animation: fadein 9s;
+  -webkit-animation: fadein 9s;
+  -o-animation: fadein 9s;
 }
 
 @keyframes fadein {
@@ -271,9 +276,12 @@ h3 {
 }
 
 .texte {
-
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
- justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: -10px;
 }
 
@@ -300,12 +308,15 @@ h3 {
   margin-right: auto;
   text-align: center;
   color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
+          box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
 }
 
 .bouton:hover {
-  box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
+          box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
 }
 
 .fa.fa-cutlery {
@@ -394,6 +405,8 @@ footer ul li {
     font-family: 'roboto', arial;
   }
   header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   #logo {
@@ -427,6 +440,7 @@ footer ul li {
   }
   #resto {
     width: 100%;
+    -o-object-fit: cover;
        object-fit: cover;
     height: 300px;
   }
@@ -471,7 +485,11 @@ footer ul li {
     white-space: nowrap;
   }
   .texte {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: -10px;
   }
@@ -480,12 +498,13 @@ footer ul li {
     padding-top: 10px;
     border-radius: 20px;
     margin-bottom: 50px;
-    width: 40%;
+    width: 30%;
     height: 30px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
   }
   h4 {
