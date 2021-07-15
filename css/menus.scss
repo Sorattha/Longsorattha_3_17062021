@@ -75,8 +75,8 @@ main {
 .like:hover .hover-icon {
    color: $primaire;
     opacity: 1;
-    -webkit-transition: .5s 0s ease;
-    transition: .5s 0s ease;
+    -webkit-transition: ease-in 2s;
+  transition: ease-in 2s;
     z-index: 999;
 }
 
@@ -106,6 +106,7 @@ h2 {
     }
 
 .entree_1, .plats_1, .dessert_1 {
+    display: flex;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(182, 182, 182);
     margin-top: 30px;
@@ -115,10 +116,11 @@ h2 {
     margin-right: auto;
     background-color: white;
     cursor: pointer;
-
 }
+
 .select {
     display: flex;
+    position: relative;
     align-items: center;
     float: right;
     justify-content: center;
@@ -130,12 +132,85 @@ h2 {
     border: 3px solid $tertiaire;
     border-radius: 0px 20px 20px 0px;
     width: 10%;
-    height: 65px;
-   margin-top: -61px;
+    height: 66px;
+    -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-out-hor-right 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-hor-right 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
+@-webkit-keyframes scale-in-hor-right {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-right {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes scale-out-hor-right {
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-out-hor-right {
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+  }
+  
+  
+
+
+
 .entree_1:hover .prix {
-    min-width: 150px;
+    min-width: 50px;
 }
 
 .entree_1:hover .select i{
@@ -151,11 +226,12 @@ h2 {
     border: 3px solid $tertiaire;
     border-radius: 0px 20px 20px 0px;
     width: 10%;
-    height: 65px;
-    margin-top: -61px;
+    height: 66px;
     float: right;
+    -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
 }
-
 
 
 .plats_1:hover .select i{
@@ -166,7 +242,7 @@ h2 {
 }
 
 .plats_1:hover .prix {
-    min-width: 150px;
+    min-width: 50px;
 }
 
 .dessert_1:hover .select {
@@ -174,9 +250,10 @@ h2 {
     border: 3px solid $tertiaire;
     border-radius: 0px 20px 20px 0px;
     width: 10%;
-    height: 65px;
-    margin-top: -61px;
+    height: 66px;
     float: right;
+    -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
 .dessert_1:hover .select i{
@@ -187,7 +264,7 @@ h2 {
 }
 
 .dessert_1:hover .prix {
-    min-width: 150px;
+    min-width: 50px;
 }
 
 
@@ -242,7 +319,8 @@ h3, .descrip {
 }
 
 h3 {
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 3px;
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
@@ -251,8 +329,9 @@ h3 {
 
 .texte {
     display: flex;
-    justify-content: space-between;
-    margin-top: -10px;
+    flex-direction: column;
+    margin-top: 0px;
+    width: 90%;
 }
 
 .descrip {
@@ -264,7 +343,7 @@ h3 {
 .prix {
     font-weight: bold;
     font-size: 17px;
-    margin-right: 20px;
+    margin-top: 30px;
 }
 
 .bouton {
@@ -353,15 +432,15 @@ li a {
 @media screen and (max-width: 980px) {
 
     .entree_1:hover .prix {
-        min-width: 110px;
+        min-width: 50px;
     }
 
     .plats_1:hover .prix {
-        min-width: 110px;
+        min-width: 50px;
     }
 
     .dessert_1:hover .prix {
-        min-width: 110px;
+        min-width: 50px;
     }
 
     }
@@ -428,29 +507,9 @@ li a {
        width: 10%;
     }
 
-    .entree_1:hover .select {
-        width: 15%;
-    }
-
-    .plats_1:hover .select {
-        width: 15%;
-    }
-
-    .dessert_1:hover .select {
-        width: 15%;
-    }
-
-    .entree_1:hover .prix {
-        min-width: 85px;
-    }
-
-    .plats_1:hover .prix {
-        min-width: 85px;
-    }
-
-    .dessert_1:hover .prix {
-        min-width: 85px;
-    }
+   .prix {
+       margin-left: 10px;
+   }
 
     h3, .descrip {
         margin-left: 10px;
@@ -460,17 +519,41 @@ li a {
     }
 
     h3 {
-        padding-top: 10px;
+      
         font-weight: bolder;
     }
 
 
     .texte {
-        display: flex;
-        justify-content: space-between;
-        margin-top: -10px;
+        display: flex; 
+        width: 80%; 
+        min-width: 50px;
     }
     
+    .entree_1:hover .select {
+        width: 20%;
+    }
+
+    .plats_1:hover .select {
+        width: 20%;
+    }
+
+    .dessert_1:hover .select {
+        width: 20%;
+    }
+
+    .entree_1:hover .prix {
+        min-width: 50px;
+    }
+
+    .plats_1:hover .prix {
+        min-width: 50px;
+    }
+
+    .dessert_1:hover .prix {
+        min-width: 50px;
+    }
+
     .bouton {
         margin-top: 40px;
         padding-top: 10px;
