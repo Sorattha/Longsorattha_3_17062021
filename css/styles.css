@@ -322,7 +322,7 @@ figure i {
 }
 
 .like:hover .hover-icon {
-  color: #9356DC;
+  color: #FF79DA;
   opacity: 2;
   -webkit-transition: .5s 0s ease;
   transition: .5s 0s ease;
@@ -434,7 +434,7 @@ li a {
     transition: .5s 0s ease;
   }
   .like:hover .hover-icon {
-    color: #9356DC;
+    color: #FF79DA;
     opacity: 2;
     -webkit-transition: .5s 0s ease;
     transition: .5s 0s ease;
@@ -626,7 +626,7 @@ li a {
     transition: .5s 0s ease;
   }
   .like:hover .hover-icon {
-    color: ;
+    color: #FF79DA;
     opacity: 2;
     -webkit-transition: .5s 0s ease;
     transition: .5s 0s ease;
