@@ -119,13 +119,11 @@ h2 {
 }
 .select {
     display: flex;
-    position: relative;
     align-items: center;
-    top: 0;
     float: right;
     justify-content: center;
-    animation: select 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 
 .entree_1:hover .select {
     background-color: $tertiaire;
@@ -133,8 +131,7 @@ h2 {
     border-radius: 0px 20px 20px 0px;
     width: 10%;
     height: 65px;
-   top: -61px;
-   animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   margin-top: -61px;
 }
 
 .entree_1:hover .prix {
@@ -155,7 +152,7 @@ h2 {
     border-radius: 0px 20px 20px 0px;
     width: 10%;
     height: 65px;
-    top: -61px;
+    margin-top: -61px;
     float: right;
 }
 
@@ -178,7 +175,7 @@ h2 {
     border-radius: 0px 20px 20px 0px;
     width: 10%;
     height: 65px;
-    top: -61px;
+    margin-top: -61px;
     float: right;
     }
 
@@ -457,21 +454,16 @@ li a {
 
     h3, .descrip {
         margin-left: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     h3 {
         padding-top: 10px;
         font-weight: bolder;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
-    
-    .descrip {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+
 
     .texte {
         display: flex;
