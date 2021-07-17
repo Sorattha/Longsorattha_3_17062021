@@ -1,6 +1,4 @@
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
+@import "variables";
 
 body {
     max-width: 1580px;
@@ -105,7 +103,7 @@ h2 {
     font-size: 20px;
     }
 
-.entree_1, .plats_1, .dessert_1 {
+.menu_1 {
     display: flex;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(182, 182, 182);
@@ -126,20 +124,36 @@ h2 {
     justify-content: center;
 }
 
-
-.entree_1:hover .select {
-    background-color: $tertiaire;
-    border: 3px solid $tertiaire;
-    border-radius: 0px 20px 20px 0px;
-    width: 10%;
-    height: 66px;
-    -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    -webkit-animation: scale-out-hor-right 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: scale-out-hor-right 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-@-webkit-keyframes scale-in-hor-right {
+.menu_1 {
+    &:hover {
+      
+      .prix {
+        min-width: 50px;
+      }
+  
+      .select {
+        background-color: $tertiaire;
+        border: 3px solid $tertiaire;
+        border-radius: 0px 20px 20px 0px;
+        width: 10%;
+        height: 66px;
+        float: right;
+        -webkit-animation: transition 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: transition 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+  
+      .fa-check-circle {
+        right: 0;
+        color: white;
+        transition: 1s ease-in-out;
+        transform: rotate(360deg);
+      }
+    }
+  }
+  
+ 
+  
+@-webkit-keyframes transition {
     0% {
       -webkit-transform: scaleX(0);
               transform: scaleX(0);
@@ -155,7 +169,7 @@ h2 {
       opacity: 1;
     }
   }
-  @keyframes scale-in-hor-right {
+  @keyframes transition {
     0% {
       -webkit-transform: scaleX(0);
               transform: scaleX(0);
@@ -172,7 +186,7 @@ h2 {
     }
   }
 
-  @-webkit-keyframes scale-out-hor-right {
+  @-webkit-keyframes transition {
     100% {
       -webkit-transform: scaleX(1);
               transform: scaleX(1);
@@ -188,7 +202,7 @@ h2 {
       opacity: 1;
     }
   }
-  @keyframes scale-out-hor-right {
+  @keyframes transition {
     100% {
       -webkit-transform: scaleX(1);
               transform: scaleX(1);
@@ -204,68 +218,6 @@ h2 {
       opacity: 1;
     }
   }
-  
-  
-
-
-
-.entree_1:hover .prix {
-    min-width: 50px;
-}
-
-.entree_1:hover .select i{
-    right: 0;
-    color: white;
-    transition: 1s ease-in-out;
-    transform: rotate(360deg);
-}
-
-
-.plats_1:hover .select {
-    background-color: $tertiaire;
-    border: 3px solid $tertiaire;
-    border-radius: 0px 20px 20px 0px;
-    width: 10%;
-    height: 66px;
-    float: right;
-    -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            
-}
-
-
-.plats_1:hover .select i{
-    right: 0;
-    color: white;
-    transition: 1s ease-in-out;
-    transform: rotate(360deg);
-}
-
-.plats_1:hover .prix {
-    min-width: 50px;
-}
-
-.dessert_1:hover .select {
-    background-color: $tertiaire;
-    border: 3px solid $tertiaire;
-    border-radius: 0px 20px 20px 0px;
-    width: 10%;
-    height: 66px;
-    float: right;
-    -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
-
-.dessert_1:hover .select i{
-    right: 0;
-    color: white;
-    transition: 1s ease-in-out;
-    transform: rotate(360deg);
-}
-
-.dessert_1:hover .prix {
-    min-width: 50px;
-}
 
 
 .entrees {
@@ -358,14 +310,8 @@ h3 {
     text-align: center;
     color: white;
     cursor: pointer;
-    background: -webkit-gradient(linear, left top, left bottom, from($secondaire), to($primaire));
-    background: linear-gradient($secondaire, $primaire);
-    box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
-    &:hover {
-        box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
-        background: linear-gradient(#ff95e1, #aa76eb);
-    }
-}
+        }
+
 
 
 .fa.fa-cutlery {
@@ -431,15 +377,7 @@ li a {
 
 @media screen and (max-width: 980px) {
 
-    .entree_1:hover .prix {
-        min-width: 50px;
-    }
-
-    .plats_1:hover .prix {
-        min-width: 50px;
-    }
-
-    .dessert_1:hover .prix {
+    .menu_1:hover .prix {
         min-width: 50px;
     }
 
@@ -530,27 +468,11 @@ li a {
         min-width: 50px;
     }
     
-    .entree_1:hover .select {
+    .menu_1:hover .select {
         width: 20%;
     }
 
-    .plats_1:hover .select {
-        width: 20%;
-    }
-
-    .dessert_1:hover .select {
-        width: 20%;
-    }
-
-    .entree_1:hover .prix {
-        min-width: 50px;
-    }
-
-    .plats_1:hover .prix {
-        min-width: 50px;
-    }
-
-    .dessert_1:hover .prix {
+    .menu_1:hover .prix {
         min-width: 50px;
     }
 

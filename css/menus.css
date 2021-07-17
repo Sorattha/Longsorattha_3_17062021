@@ -1,3 +1,21 @@
+.bouton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
+          box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
+}
+
+.bouton:hover {
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
+          box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff95e1), to(#ab76eb));
+  background: linear-gradient(#ff95e1, #ab76eb);
+}
+
+.menu:hover, .titre:hover, .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
+  color: #9356DC;
+}
+
 body {
   max-width: 1580px;
   margin-left: 0;
@@ -109,7 +127,7 @@ h2 {
   font-size: 20px;
 }
 
-.entree_1, .plats_1, .dessert_1 {
+.menu_1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,111 +157,22 @@ h2 {
           justify-content: center;
 }
 
-.entree_1:hover .select {
-  background-color: #99E2D0;
-  border: 3px solid #99E2D0;
-  border-radius: 0px 20px 20px 0px;
-  width: 10%;
-  height: 66px;
-  -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-hor-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  -webkit-animation: scale-out-hor-right 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: scale-out-hor-right 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-@-webkit-keyframes scale-in-hor-right {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes scale-in-hor-right {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes scale-out-hor-right {
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes scale-out-hor-right {
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-}
-
-.entree_1:hover .prix {
+.menu_1:hover .prix {
   min-width: 50px;
 }
 
-.entree_1:hover .select i {
-  right: 0;
-  color: white;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.plats_1:hover .select {
+.menu_1:hover .select {
   background-color: #99E2D0;
   border: 3px solid #99E2D0;
   border-radius: 0px 20px 20px 0px;
   width: 10%;
   height: 66px;
   float: right;
-  -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-hor-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: transition 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: transition 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.plats_1:hover .select i {
+.menu_1:hover .fa-check-circle {
   right: 0;
   color: white;
   -webkit-transition: 1s ease-in-out;
@@ -252,32 +181,72 @@ h2 {
           transform: rotate(360deg);
 }
 
-.plats_1:hover .prix {
-  min-width: 50px;
+@-webkit-keyframes transition {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
 }
 
-.dessert_1:hover .select {
-  background-color: #99E2D0;
-  border: 3px solid #99E2D0;
-  border-radius: 0px 20px 20px 0px;
-  width: 10%;
-  height: 66px;
-  float: right;
-  -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-hor-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+@keyframes transition {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
 }
 
-.dessert_1:hover .select i {
-  right: 0;
-  color: white;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+@-webkit-keyframes transition {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
 }
 
-.dessert_1:hover .prix {
-  min-width: 50px;
+@keyframes transition {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
 }
 
 .entrees {
@@ -383,17 +352,6 @@ h3 {
   text-align: center;
   color: white;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
-          box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
-}
-
-.bouton:hover {
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
-          box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff95e1), to(#aa76eb));
-  background: linear-gradient(#ff95e1, #aa76eb);
 }
 
 .fa.fa-cutlery {
@@ -470,13 +428,7 @@ li a {
 }
 
 @media screen and (max-width: 980px) {
-  .entree_1:hover .prix {
-    min-width: 50px;
-  }
-  .plats_1:hover .prix {
-    min-width: 50px;
-  }
-  .dessert_1:hover .prix {
+  .menu_1:hover .prix {
     min-width: 50px;
   }
 }
@@ -552,22 +504,10 @@ li a {
     width: 80%;
     min-width: 50px;
   }
-  .entree_1:hover .select {
+  .menu_1:hover .select {
     width: 20%;
   }
-  .plats_1:hover .select {
-    width: 20%;
-  }
-  .dessert_1:hover .select {
-    width: 20%;
-  }
-  .entree_1:hover .prix {
-    min-width: 50px;
-  }
-  .plats_1:hover .prix {
-    min-width: 50px;
-  }
-  .dessert_1:hover .prix {
+  .menu_1:hover .prix {
     min-width: 50px;
   }
   .bouton {
