@@ -168,7 +168,7 @@ li {
   display: flex;
 }
 
-.menu {
+.menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,7 @@ li {
   cursor: pointer;
 }
 
-.menu:hover, .titre:hover, .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
+.menus:hover, .titre:hover, .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
   color: #9356DC;
 }
 
@@ -211,7 +211,7 @@ li {
   font-size: 18px;
 }
 
-.menu:hover {
+.menus:hover {
   background-color: #efd8fd;
 }
 
@@ -391,7 +391,7 @@ li a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .menu {
+  .menus {
     width: 50%;
     cursor: pointer;
   }
@@ -549,7 +549,7 @@ li a {
     display: flex;
     margin-left: 10px;
   }
-  .menu {
+  .menus {
     border-radius: 40px;
     -webkit-box-shadow: 5px 5px 5px #b6b6b6;
             box-shadow: 5px 5px 5px #b6b6b6;
@@ -583,7 +583,7 @@ li a {
   .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
     color: #9356DC;
   }
-  .menu:hover {
+  .menus:hover {
     background-color: #efd8fd;
   }
   /* RESTAURANTS*/

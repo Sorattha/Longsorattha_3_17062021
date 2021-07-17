@@ -12,10 +12,6 @@
   background: linear-gradient(#ff95e1, #ab76eb);
 }
 
-.menu:hover, .titre:hover, .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
-  color: #9356DC;
-}
-
 body {
   max-width: 1580px;
   margin-left: 0;
