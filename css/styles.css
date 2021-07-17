@@ -260,7 +260,7 @@ figure {
 }
 
 .nom-restaurant {
-  margin-top: 0;
+  margin-top: 10px;
   padding-top: 5px;
   font-weight: bold;
   margin-left: 10px;
@@ -269,8 +269,6 @@ figure {
 
 .lieu {
   margin-left: 10px;
-  padding-top: 0;
-  padding-bottom: 0px;
 }
 
 a {
@@ -282,7 +280,7 @@ figure i {
   float: right;
   margin-top: -60px;
   margin-right: 20px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .like {
@@ -525,6 +523,14 @@ li a {
     cursor: pointer;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
+            box-shadow: 0px 5px 10px 0px rgba(146, 146, 146, 0.562);
+  }
+  .bouton:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
+            box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff95e1), to(#aa76eb));
+    background: linear-gradient(#ff95e1, #aa76eb);
   }
   /* FONCTIONNEMENT */
   .fonction {
