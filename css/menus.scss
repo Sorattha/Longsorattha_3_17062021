@@ -9,6 +9,9 @@ body {
     font-family: 'roboto', arial;
 }
 
+
+/* HEADER */
+
 header {
     display: flex;
     margin-bottom: 20px;
@@ -28,7 +31,9 @@ header {
     color: black;
 }
 
- .photo {
+/* PHOTO RESTO */
+
+.photo {
     position: relative;
     height: 350px;
 }
@@ -39,27 +44,7 @@ header {
     height: 500px;
 }
 
-main {
-    position: relative;
-    border-radius: 20px 20px 0px 0px;
-    top: -40px;
-    background-color: rgb(241, 241, 241);
-    width: 100%;
-    padding-bottom: 10px;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    margin-left: 0;
-    }
-
-.menu i {
-    margin-right: 20px;
-    font-size: 30px;
-    padding-top: 20px;
-}
+/* ANIMATION COEUR */
 
 .like .hover-icon {
     right: 0;
@@ -84,47 +69,7 @@ main {
   transition: ease-in 1.5s;
 }
 
-
-h1 {
-    font-family: 'shrikhand', arial;
-    margin-left: 20px;
-    font-size: 25px;
-}
-
-
-h2 {
-   font-size: 20px; 
-   margin-top: 40px;
-   margin-left: 20px;
-   border-bottom: 2px solid $tertiaire;
-   width: 3%;
-}
-
-.select i { 
-    color: transparent;
-    font-size: 20px;
-    }
-
-.menu_1 {
-    display: flex;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgb(182, 182, 182);
-    margin-top: 30px;
-    width: 80%;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    cursor: pointer;
-}
-
-.select {
-    display: flex;
-    position: relative;
-    align-items: center;
-    float: right;
-    justify-content: center;
-}
+/* ANIMATION SELECT */
 
 .menu_1 {
     &:hover {
@@ -153,8 +98,6 @@ h2 {
     }
   }
   
- 
-  
 @-webkit-keyframes transition {
     0% {
       -webkit-transform: scaleX(0);
@@ -171,7 +114,8 @@ h2 {
       opacity: 1;
     }
   }
-  @keyframes transition {
+
+@keyframes transition {
     0% {
       -webkit-transform: scaleX(0);
               transform: scaleX(0);
@@ -188,23 +132,7 @@ h2 {
     }
   }
 
-  @-webkit-keyframes transition {
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    0% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-  }
-  @keyframes transition {
+@-webkit-keyframes transition {
     100% {
       -webkit-transform: scaleX(1);
               transform: scaleX(1);
@@ -221,6 +149,24 @@ h2 {
     }
   }
 
+@keyframes transition {
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+}
+
+/* ANIMATION APPARITION MENU */
 
 .entrees {
     animation: fadein 3s;
@@ -241,31 +187,94 @@ h2 {
     animation: fadein 6s;
     -webkit-animation: fadein 6s;
     -o-animation: fadein 6s;
-}
+    }
 
 @keyframes fadein {
-from {
+    from {
     opacity: 0;
-}
-to {
+    }
+    to {
     opacity: 1;
+    }
 }
-}
-
 
 .desserts {
     animation: fadein 9s;
     -webkit-animation: fadein 9s;
     -o-animation: fadein 9s;
-}
+    }
 
 @keyframes fadein {
-from {
+    from {
     opacity: 0;
-}
-to {
+    }
+    to {
     opacity: 1;
+    }
 }
+
+/* MENUS */
+
+main {
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    top: -40px;
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-left: 0;
+    }
+
+.menu i {
+    margin-right: 20px;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: 'shrikhand', arial;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+h2 {
+   font-size: 20px; 
+   margin-top: 40px;
+   margin-left: 20px;
+   border-bottom: 2px solid $tertiaire;
+   width: 3%;
+}
+
+.select i { 
+    color: transparent;
+    font-size: 20px;
+}
+
+.menu_1 {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(182, 182, 182);
+    margin-top: 30px;
+    width: 80%;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    cursor: pointer;
+}
+
+.select {
+    display: flex;
+    position: relative;
+    align-items: center;
+    float: right;
+    justify-content: center;
 }
 
 h3, .descrip {
@@ -300,6 +309,8 @@ h3 {
     margin-top: 30px;
 }
 
+/* BOUTON */
+
 .bouton {
     margin-top: 40px;
     padding-top: 10px;
@@ -318,25 +329,11 @@ h3 {
     &:hover {
         box-shadow: 0px 10px 20px 0px rgba(146, 146, 146, 0.822);
         background: linear-gradient(#ff95e1, #aa76eb);    
-}
-}
+        }
+    }
 
+/* FOOTER */
 
-
-.fa.fa-cutlery {
-    margin-top: 15px;
-}
-.propose {
-    margin-left: 25px;
-    margin-top: -20px;
-}
-.fa.fa-handshake-o {
-    margin-top: -15px;
-}
-.partenaire {
-    margin-top: -20px;
-    margin-left: 25px;
-}
 footer {
     color: white;
     background-color: black;
@@ -384,20 +381,7 @@ li a {
     color: white;
 }
 
-@media screen and (max-width: 980px) {
-
-    .menu_1:hover .prix {
-        min-width: 50px;
-    }
-
-    }
-
 @media screen and (max-width: 600px) {
-
-    body {
-        margin: auto;
-        font-family: 'roboto', arial;
-    }
 
     header {
         display: flex;
@@ -423,15 +407,8 @@ li a {
     }
 
     main {
-        position: relative;
-        border-radius: 20px 20px 0px 0px;
         margin-top: -70px;
-        background-color: rgb(241, 241, 241);
-        width: 100%;
-        padding-bottom: 10px;
     }
-
-   
 
     h1 {
         font-weight: bold;
@@ -439,7 +416,6 @@ li a {
         font-size: 25px;
     }
 
-    
     #resto {
         width: 100%;
         object-fit: cover;
@@ -458,18 +434,10 @@ li a {
        margin-left: 10px;
    }
 
-    h3, .descrip {
-        margin-left: 10px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
     h3 {
       
         font-weight: bolder;
     }
-
 
     .texte {
         display: flex; 
@@ -482,67 +450,11 @@ li a {
     }
 
     .menu_1:hover .prix {
-        min-width: 50px;
+        min-width: 40px;
     }
 
     .bouton {
-        margin-top: 40px;
-        padding-top: 10px;
-        border-radius: 20px;
-        margin-bottom: 50px;
         width: 35%;
-        height: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        color: white;
-        cursor: pointer;
-        background: -webkit-gradient(linear, left top, left bottom, from($secondaire), to($primaire));
-        background: linear-gradient($secondaire, $primaire);
     }
 
-    h4 {
-        color: white;
-    }
-
-    footer {
-        color: white;
-        background-color: black;
-        position: absolute;
-        margin-top: -40px;
-        margin-bottom: 0;
-        height: 250px;
-        width: 100%;
-    }
-    h4 {
-        margin-left: 40px;
-        padding-top: 10px;
-        font-size: 20px;
-        font-family: 'shrikhand', arial;
-    }
-    .fa.fa-cutlery {
-        margin-top: 15px;
-    }
-    .propose {
-        margin-left: 25px;
-        margin-top: -20px;
-    }
-    .fa.fa-handshake-o {
-        margin-top: -15px;
-    }
-    .partenaire {
-        margin-top: -20px;
-        margin-left: 25px;
-    }
-    footer p {
-        margin-left: 10px;
-    }
-    .mention {
-        margin-top: -5px;
-    }
-    footer ul li {
-        list-style-type: none;
-        margin-top: 10px;
-        margin-left: 0px; 
-    } 
-    }
+}

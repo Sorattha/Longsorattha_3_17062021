@@ -5,6 +5,7 @@ body {
   font-family: 'roboto', arial;
 }
 
+/* HEADER */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +28,7 @@ header {
   color: black;
 }
 
+/* PHOTO RESTO */
 .photo {
   position: relative;
   height: 350px;
@@ -39,32 +41,7 @@ header {
   height: 500px;
 }
 
-main {
-  position: relative;
-  border-radius: 20px 20px 0px 0px;
-  top: -40px;
-  background-color: #f1f1f1;
-  width: 100%;
-  padding-bottom: 10px;
-}
-
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 20px;
-  margin-left: 0;
-}
-
-.menu i {
-  margin-right: 20px;
-  font-size: 30px;
-  padding-top: 20px;
-}
-
+/* ANIMATION COEUR */
 .like .hover-icon {
   right: 0;
   opacity: 0;
@@ -89,55 +66,7 @@ main {
   transition: ease-in 1.5s;
 }
 
-h1 {
-  font-family: 'shrikhand', arial;
-  margin-left: 20px;
-  font-size: 25px;
-}
-
-h2 {
-  font-size: 20px;
-  margin-top: 40px;
-  margin-left: 20px;
-  border-bottom: 2px solid #99E2D0;
-  width: 3%;
-}
-
-.select i {
-  color: transparent;
-  font-size: 20px;
-}
-
-.menu_1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 5px #b6b6b6;
-          box-shadow: 5px 5px 5px #b6b6b6;
-  margin-top: 30px;
-  width: 80%;
-  height: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  cursor: pointer;
-}
-
-.select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  float: right;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
+/* ANIMATION SELECT */
 .menu_1:hover .prix {
   min-width: 50px;
 }
@@ -230,6 +159,7 @@ h2 {
   }
 }
 
+/* ANIMATION APPARITION MENU */
 .entrees {
   animation: fadein 3s;
   -webkit-animation: fadein 3s;
@@ -284,6 +214,82 @@ h2 {
   }
 }
 
+/* MENUS */
+main {
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  top: -40px;
+  background-color: #f1f1f1;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  margin-left: 0;
+}
+
+.menu i {
+  margin-right: 20px;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: 'shrikhand', arial;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  border-bottom: 2px solid #99E2D0;
+  width: 3%;
+}
+
+.select i {
+  color: transparent;
+  font-size: 20px;
+}
+
+.menu_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px #b6b6b6;
+          box-shadow: 5px 5px 5px #b6b6b6;
+  margin-top: 30px;
+  width: 80%;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  cursor: pointer;
+}
+
+.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 h3, .descrip {
   margin-left: 10px;
 }
@@ -321,6 +327,7 @@ h3 {
   margin-top: 30px;
 }
 
+/* BOUTON */
 .bouton {
   margin-top: 40px;
   padding-top: 10px;
@@ -346,24 +353,7 @@ h3 {
   background: linear-gradient(#ff95e1, #aa76eb);
 }
 
-.fa.fa-cutlery {
-  margin-top: 15px;
-}
-
-.propose {
-  margin-left: 25px;
-  margin-top: -20px;
-}
-
-.fa.fa-handshake-o {
-  margin-top: -15px;
-}
-
-.partenaire {
-  margin-top: -20px;
-  margin-left: 25px;
-}
-
+/* FOOTER */
 footer {
   color: white;
   background-color: black;
@@ -419,17 +409,7 @@ li a {
   color: white;
 }
 
-@media screen and (max-width: 980px) {
-  .menu_1:hover .prix {
-    min-width: 50px;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  body {
-    margin: auto;
-    font-family: 'roboto', arial;
-  }
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -452,12 +432,7 @@ li a {
     position: relative;
   }
   main {
-    position: relative;
-    border-radius: 20px 20px 0px 0px;
     margin-top: -70px;
-    background-color: #f1f1f1;
-    width: 100%;
-    padding-bottom: 10px;
   }
   h1 {
     font-weight: bold;
@@ -480,12 +455,6 @@ li a {
   .prix {
     margin-left: 10px;
   }
-  h3, .descrip {
-    margin-left: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
   h3 {
     font-weight: bolder;
   }
@@ -500,65 +469,10 @@ li a {
     width: 20%;
   }
   .menu_1:hover .prix {
-    min-width: 50px;
+    min-width: 40px;
   }
   .bouton {
-    margin-top: 40px;
-    padding-top: 10px;
-    border-radius: 20px;
-    margin-bottom: 50px;
     width: 35%;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
-  }
-  h4 {
-    color: white;
-  }
-  footer {
-    color: white;
-    background-color: black;
-    position: absolute;
-    margin-top: -40px;
-    margin-bottom: 0;
-    height: 250px;
-    width: 100%;
-  }
-  h4 {
-    margin-left: 40px;
-    padding-top: 10px;
-    font-size: 20px;
-    font-family: 'shrikhand', arial;
-  }
-  .fa.fa-cutlery {
-    margin-top: 15px;
-  }
-  .propose {
-    margin-left: 25px;
-    margin-top: -20px;
-  }
-  .fa.fa-handshake-o {
-    margin-top: -15px;
-  }
-  .partenaire {
-    margin-top: -20px;
-    margin-left: 25px;
-  }
-  footer p {
-    margin-left: 10px;
-  }
-  .mention {
-    margin-top: -5px;
-  }
-  footer ul li {
-    list-style-type: none;
-    margin-top: 10px;
-    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=menus.css.map */
