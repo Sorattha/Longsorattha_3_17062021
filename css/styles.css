@@ -316,6 +316,9 @@ figure i {
 
 .like:hover .hover-icon {
   color: #9356DC;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 1;
   -webkit-transition: ease-in 1.5s;
   transition: ease-in 1.5s;

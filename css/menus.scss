@@ -64,6 +64,9 @@ header {
 
 .like:hover .hover-icon {
    color: $primaire;
+   background: -webkit-linear-gradient($secondaire, $primaire);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
     opacity: 1;
     -webkit-transition: ease-in 2s;
   transition: ease-in 1.5s;
