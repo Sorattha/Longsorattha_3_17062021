@@ -146,11 +146,7 @@ li {
    cursor: pointer;
 }
 
-.fa.fa-mobile, .fa.fa-list, .fa.fa-store {
-    color: rgb(128, 128, 128);
-}
-
-.menus:hover, .titre:hover, .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
+.menus:hover i {
     color: $primaire;
 }
 
@@ -176,6 +172,7 @@ li {
    margin-left: 20px;
    margin-top: 20px;
    font-size: 18px;
+   color: rgb(128, 128, 128);
 }
 
 .menus:hover {
