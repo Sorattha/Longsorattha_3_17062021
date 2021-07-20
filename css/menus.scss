@@ -88,8 +88,8 @@ header {
         width: 10%;
         height: 64px;
         float: right;
-        -webkit-animation: transition 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                    animation: transition 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        -webkit-animation: transition 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        animation: transition 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
       }
   
       .fa-check-circle {
@@ -101,7 +101,7 @@ header {
     }
   }
   
-@-webkit-keyframes transition {
+  @-webkit-keyframes transition {
     0% {
       -webkit-transform: scaleX(0);
               transform: scaleX(0);
@@ -135,6 +135,23 @@ header {
     }
   }
 
+  @keyframes transition {
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+}
+
 @-webkit-keyframes transition {
     100% {
       -webkit-transform: scaleX(1);
@@ -151,23 +168,6 @@ header {
       opacity: 1;
     }
   }
-
-@keyframes transition {
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    0% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-}
 
 /* ANIMATION APPARITION MENU */
 
@@ -339,7 +339,7 @@ h3 {
 
 footer {
     color: white;
-    background-color: black;
+    background-color: rgb(59, 59, 59);
     position: absolute;
     margin-top: -40px;
     margin-bottom: 0;
@@ -448,6 +448,10 @@ li a {
         min-width: 50px;
     }
     
+    .menu_1 {
+        width: 90%;
+    }
+
     .menu_1:hover .select {
         width: 20%;
     }

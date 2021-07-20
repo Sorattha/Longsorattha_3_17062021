@@ -146,6 +146,10 @@ li {
    cursor: pointer;
 }
 
+.fa.fa-mobile, .fa.fa-list, .fa.fa-store {
+    color: rgb(128, 128, 128);
+}
+
 .menus:hover, .titre:hover, .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
     color: $primaire;
 }
@@ -291,7 +295,7 @@ figure i {
 
 footer {
     color: white;
-    background-color: black;
+    background-color: rgb(59, 59, 59);
     margin-top: 0px;
     height: 230px;
     width: 100%;

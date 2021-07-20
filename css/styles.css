@@ -179,6 +179,10 @@ li {
   cursor: pointer;
 }
 
+.fa.fa-mobile, .fa.fa-list, .fa.fa-store {
+  color: gray;
+}
+
 .menus:hover, .titre:hover, .fa.fa-mobile:hover, .fa.fa-list:hover, .fa.fa-store:hover {
   color: #9356DC;
 }
@@ -327,7 +331,7 @@ figure i {
 /* FOOTER */
 footer {
   color: white;
-  background-color: black;
+  background-color: #3b3b3b;
   margin-top: 0px;
   height: 230px;
   width: 100%;
